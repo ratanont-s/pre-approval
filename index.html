@@ -1,72 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    
-    <title>Pre-Approval</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.min.css">
+  <title>Pre-Approval</title>
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <section>
-            <div class="container">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, molestias nulla maiores cum pariatur perferendis quis voluptatibus deleniti, modi odit laborum nisi aliquam odio iusto inventore harum quod ex nostrum.
-                </p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>Footer</p>
-        </div>
-    </footer>
 
-    <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha512-kBFfSXuTKZcABVouRYGnUo35KKa1FBrYgwG4PAx7Z2Heroknm0ca2Fm2TosdrrI356EDHMW383S3ISrwKcVPUw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+<body>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo.svg" alt="pre-approval.com.au">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Book Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Apply Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="banner" class="banner">
+      <ul class="banner__slide">
+        <li class="banner__slide-item" style="background-image: url('./assets/img/banner-01.jpg');">
+          <div class="banner__slide-content">
+            <h2 class="banner__slide-title">Pre Approval</h2>
+            <p class="banner__slide-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Book Appointment</a>
+          </div>
+        </li>
+        <li class="banner__slide-item" style="background-image: url('./assets/img/banner-01.jpg');">
+          <div class="banner__slide-content">
+            <h2 class="banner__slide-title">Pre Approval</h2>
+            <p class="banner__slide-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Book Appointment</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="lenders" class="lenders">
+      <div class="container">
+        <h2>Our Panel of Lenders</h2>
+      </div>
+      <ul class="lenders__slide">
+        <li class="lenders__slide-item">
+          <img src="./assets/img/lenders-1.png" alt="" class="lenders__slide-img">
+        </li>
+        <li class="lenders__slide-item">
+          <img src="./assets/img/lenders-2.png" alt="" class="lenders__slide-img">
+        </li>
+        <li class="lenders__slide-item">
+          <img src="./assets/img/lenders-3.png" alt="" class="lenders__slide-img">
+        </li>
+        <li class="lenders__slide-item">
+          <img src="./assets/img/lenders-4.png" alt="" class="lenders__slide-img">
+        </li>
+        <li class="lenders__slide-item">
+          <img src="./assets/img/lenders-1.png" alt="" class="lenders__slide-img">
+        </li>
+        <li class="lenders__slide-item">
+          <img src="./assets/img/lenders-2.png" alt="" class="lenders__slide-img">
+        </li>
+        <li class="lenders__slide-item">
+          <img src="./assets/img/lenders-3.png" alt="" class="lenders__slide-img">
+        </li>
+        <li class="lenders__slide-item">
+          <img src="./assets/img/lenders-4.png" alt="" class="lenders__slide-img">
+        </li>
+      </ul>
+    </section>
+    <section id="reason" class="reason">
+      <div class="container">
+        <h2>8 Reason to Get Pre Appraval</h2>
+        <ul class="reason__list">
+          <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut.</li>
+          <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut.</li>
+          <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut.</li>
+          <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut.</li>
+          <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut.</li>
+          <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut.</li>
+          <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut.</li>
+          <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut.</li>
+        </ul>
+        <ul class="reason__slide">
+          <li class="reason__slide-item">
+            <div class="card">
+              <div class="row">
+                <div class="col-lg-auto">
+                  <img src="./assets/img/user.jpg" alt="" class="card-img">
+                  <h5 class="card-title">Nathan Martin</h5>
+                  <h6 class="card-subtitle">Director</h6>
+                </div>
+                <div class="col-lg">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="reason__slide-item">
+            <div class="card">
+              <div class="row">
+                <div class="col-lg-auto">
+                  <img src="./assets/img/user.jpg" alt="" class="card-img">
+                  <h5 class="card-title">Nathan Martin</h5>
+                  <h6 class="card-subtitle">Director</h6>
+                </div>
+                <div class="col-lg">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="reason__slide-item">
+            <div class="card">
+              <div class="row">
+                <div class="col-lg-auto">
+                  <img src="./assets/img/user.jpg" alt="" class="card-img">
+                  <h5 class="card-title">Nathan Martin</h5>
+                  <h6 class="card-subtitle">Director</h6>
+                </div>
+                <div class="col-lg">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="reason__slide-item">
+            <div class="card">
+              <div class="row">
+                <div class="col-lg-auto">
+                  <img src="./assets/img/user.jpg" alt="" class="card-img">
+                  <h5 class="card-title">Nathan Martin</h5>
+                  <h6 class="card-subtitle">Director</h6>
+                </div>
+                <div class="col-lg">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="goal" class="goal">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <div class="goal__img">
+              <img src="./assets/img/goal-for-clients.jpg" alt="Our Goal for Clients" class="goal__img-shadow">
+              <img src="./assets/img/goal-for-clients.jpg" alt="Our Goal for Clients" class="goal__img-main">
+            </div>
+          </div>
+          <div class="col-lg">
+            <h2>Our Goal for Clients</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+            <p>
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>Footer</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-kBFfSXuTKZcABVouRYGnUo35KKa1FBrYgwG4PAx7Z2Heroknm0ca2Fm2TosdrrI356EDHMW383S3ISrwKcVPUw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('.banner__slide').slick({
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            arrow: false
+          }
+        }]
+      });
+
+      $('.lenders__slide').slick({
+        slidesToShow: 4,
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+          }
+        }]
+      });
+
+      $('.reason__slide').slick({
+        slidesToShow: 3,
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+          }
+        }]
+      });
+    });
+  </script>
 </body>
+
 </html>

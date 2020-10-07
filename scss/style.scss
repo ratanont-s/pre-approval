@@ -1,6 +1,18 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+// Variables
+@import './variables';
+
 // Bootstrap
 @import './bootstrap/bootstrap.scss';
 
 // Slick
 @import './slick/slick.scss';
 @import './slick/slick-theme.scss';
+
+// Layouts
+@import './header';
+
+// Landing
+@import './landing';
