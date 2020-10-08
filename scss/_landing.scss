@@ -6,7 +6,7 @@
       margin-bottom: 0;
 
       &-item {
-        padding: 1rem;
+        padding: 8rem 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -226,12 +226,37 @@
 }
 
 #apply {
-  text-align: center;
   .apply {
     &__nav {
       padding-top: 50px;
       padding-bottom: 50px;
       background-color: $primary;
+      .nav {
+        &-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-basis: 0;
+          flex-grow: 1;
+          text-align: center;
+        }
+        &-img {
+          margin-bottom: 20px;
+        }
+        &-link {
+          background-color: $dark;
+          color: $white;
+          border-radius: 10rem;
+          font-weight: bold;
+          @include font-size(20);
+          border: 1px solid $dark;
+          &.active {
+            background-color: $white;
+            color: $body-color;
+          }
+        }
+      }
     }
     &__content {
       padding-top: 50px;
@@ -259,6 +284,19 @@
         }
       }
     }
+  }
+  @include media-breakpoint-down(md){
+      .apply{
+          &__nav{
+              .nav{
+                  &-item{
+                      &:not(:last-child){
+                          margin-bottom: 30px;
+                      }
+                  }
+              }
+          }
+      }
   }
 }
 
