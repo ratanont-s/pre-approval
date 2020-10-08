@@ -9,6 +9,9 @@
 
   <title>Pre-Approval</title>
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
@@ -19,7 +22,7 @@
 </head>
 
 <body>
-  <header class="fixed-top">
+  <header class="header fixed-top">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -44,6 +47,11 @@
         </div>
       </div>
     </nav>
+    <div class="header__bottom">
+      <div class="container">
+        <a href="tel:+1300000000" class="header__bottom-link">1300 000 000 <i class="fas fa-headset"></i></a>
+      </div>
+    </div>
   </header>
   <main>
     <section id="banner" class="banner">
@@ -55,7 +63,7 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.
             </p>
-            <a href="#" class="btn btn-primary btn-lg">Book Appointment</a>
+            <a href="#" class="btn btn-primary btn-lg rounded-pill">Book Appointment</a>
           </div>
         </li>
         <li class="banner__slide-item" style="background-image: url('./assets/img/banner-01.jpg');">
@@ -65,45 +73,61 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.
             </p>
-            <a href="#" class="btn btn-primary btn-lg">Book Appointment</a>
+            <a href="#" class="btn btn-primary btn-lg rounded-pill">Book Appointment</a>
+          </div>
+        </li>
+        <li class="banner__slide-item" style="background-image: url('./assets/img/banner-01.jpg');">
+          <div class="banner__slide-content">
+            <h2 class="banner__slide-title">Pre Approval</h2>
+            <p class="banner__slide-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg rounded-pill">Book Appointment</a>
           </div>
         </li>
       </ul>
     </section>
     <section id="lenders" class="lenders">
       <div class="container">
-        <h2>Our Panel of Lenders</h2>
+        <h2 class="lenders__title">
+          <span>Our Panel of Lenders</span>
+        </h2>
       </div>
-      <ul class="lenders__slide">
-        <li class="lenders__slide-item">
-          <img src="./assets/img/lenders-1.png" alt="" class="lenders__slide-img">
-        </li>
-        <li class="lenders__slide-item">
-          <img src="./assets/img/lenders-2.png" alt="" class="lenders__slide-img">
-        </li>
-        <li class="lenders__slide-item">
-          <img src="./assets/img/lenders-3.png" alt="" class="lenders__slide-img">
-        </li>
-        <li class="lenders__slide-item">
-          <img src="./assets/img/lenders-4.png" alt="" class="lenders__slide-img">
-        </li>
-        <li class="lenders__slide-item">
-          <img src="./assets/img/lenders-1.png" alt="" class="lenders__slide-img">
-        </li>
-        <li class="lenders__slide-item">
-          <img src="./assets/img/lenders-2.png" alt="" class="lenders__slide-img">
-        </li>
-        <li class="lenders__slide-item">
-          <img src="./assets/img/lenders-3.png" alt="" class="lenders__slide-img">
-        </li>
-        <li class="lenders__slide-item">
-          <img src="./assets/img/lenders-4.png" alt="" class="lenders__slide-img">
-        </li>
-      </ul>
+      <div class="lenders__slide--bg">
+        <div class="container">
+          <ul class="lenders__slide">
+            <li class="lenders__slide-item">
+              <img src="./assets/img/lenders-1.png" alt="" class="lenders__slide-img">
+            </li>
+            <li class="lenders__slide-item">
+              <img src="./assets/img/lenders-2.png" alt="" class="lenders__slide-img">
+            </li>
+            <li class="lenders__slide-item">
+              <img src="./assets/img/lenders-3.png" alt="" class="lenders__slide-img">
+            </li>
+            <li class="lenders__slide-item">
+              <img src="./assets/img/lenders-4.png" alt="" class="lenders__slide-img">
+            </li>
+            <li class="lenders__slide-item">
+              <img src="./assets/img/lenders-1.png" alt="" class="lenders__slide-img">
+            </li>
+            <li class="lenders__slide-item">
+              <img src="./assets/img/lenders-2.png" alt="" class="lenders__slide-img">
+            </li>
+            <li class="lenders__slide-item">
+              <img src="./assets/img/lenders-3.png" alt="" class="lenders__slide-img">
+            </li>
+            <li class="lenders__slide-item">
+              <img src="./assets/img/lenders-4.png" alt="" class="lenders__slide-img">
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section id="reason" class="reason">
       <div class="container">
-        <h2>8 Reason to Get Pre Appraval</h2>
+        <h2 class="reason__title">8 Reason to Get Pre Appraval</h2>
         <ul class="reason__list">
           <li class="reason__list-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
             tempor invidunt ut.</li>
@@ -200,12 +224,12 @@
             </div>
           </div>
           <div class="col-lg">
-            <h2>Our Goal for Clients</h2>
-            <p>
+            <h2 class="goal__title">Our Goal for Clients</h2>
+            <p class="goal__text">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
             </p>
-            <p>
+            <p class="goal__text">
               Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
               amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
               aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
@@ -215,10 +239,164 @@
         </div>
       </div>
     </section>
+    <section id="apply" class="apply">
+      <div class="apply__nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="apply__item">
+                <img src="./assets/img/how-to-1.png" alt="Virtual Appointment" class="apply__img">
+                <h5 class="apply__title">
+                  <span>Virtual Appointment</span>
+                </h5>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="apply__item">
+                <img src="./assets/img/how-to-2.png" alt="Face to Face" class="apply__img">
+                <h5 class="apply__title">
+                  <span>Face to Face</span>
+                </h5>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="apply__item">
+                <img src="./assets/img/how-to-3.png" alt="Apply Online" class="apply__img">
+                <h5 class="apply__title">
+                  <span>Apply Online</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="apply__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="apply__content__img">
+                <img src="./assets/img/sub-apply.jpg" alt="Sub Apply" class="apply__content__img-shadow">
+                <img src="./assets/img/sub-apply.jpg" alt="Sub Apply" class="apply__content__img-main">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="apply__content__text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </p>
+              <p class="apply__content__text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </p>
+              <div class="text-center text-lg-left">
+                <a href="#" class="btn btn-primary rounded-pill">Book Appointment Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mortgage" class="mortgage">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="mortgage__title">Personal Mortgage Advisers</h2>
+            <p class="mortgage__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+            <p class="mortgage__text">
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card card-body">
+              <img src="./assets/img/mortgage.jpg" alt="" class="card-img">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h5 class="card-title">Nathan Martin</h5>
+                  <h6 class="card-subtitle">Director</h6>
+                </div>
+                <div class="col-auto">
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="container">
-      <p>Footer</p>
+      <img src="./assets/img/logo.svg" alt="" class="footer__img">
+      <div class="row">
+        <div class="col-lg-4">
+          <h5 class="footer__title">Legal</h5>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Privacy</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">Terms of use</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="footer__title">Connect with us</h5>
+          <ul class="footer__list footer__list--social">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">
+                <i class="fab fa-facebook-square"></i> Facebook
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">
+                <i class="fab fa-youtube-square"></i> YouTube
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">
+                <i class="fab fa-instagram-square"></i> Instagram
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">
+                <i class="fab fa-twitter-square"></i> Twitter
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">
+                <i class="fab fa-linkedin"></i> Linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="footer__title">Contact us</h5>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="tel:0430037462" class="footer__list-link">0430 037 462</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="mailto:contact@pre-approval.com.au" class="footer__list-link">contact@pre-approval.com.au</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="container">
+          © 2020 Pre-Approval.com.au, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </div>
     </div>
   </footer>
 
@@ -235,16 +413,19 @@
   <script>
     $(function () {
       $('.banner__slide').slick({
+        autoplay: true,
         responsive: [{
           breakpoint: 991,
           settings: {
-            arrow: false
+            arrows: false,
+            dots: true,
           }
         }]
       });
 
       $('.lenders__slide').slick({
         slidesToShow: 4,
+        autoplay: true,
         responsive: [{
           breakpoint: 991,
           settings: {
@@ -255,6 +436,7 @@
 
       $('.reason__slide').slick({
         slidesToShow: 3,
+        autoplay: true,
         responsive: [{
           breakpoint: 991,
           settings: {

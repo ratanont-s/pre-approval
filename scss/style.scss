@@ -4,15 +4,23 @@
 // Variables
 @import './variables';
 
+// Mixins
+@import './mixins';
+
 // Bootstrap
 @import './bootstrap/bootstrap.scss';
 
 // Slick
-@import './slick/slick.scss';
-@import './slick/slick-theme.scss';
+@import './slick/slick';
+@import './slick/slick-theme';
 
 // Layouts
 @import './header';
+@import './footer';
 
 // Landing
 @import './landing';
+
+html,body{
+    overflow-x: hidden;
+}

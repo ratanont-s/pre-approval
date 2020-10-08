@@ -1,7 +1,18 @@
 // Colors
 $primary: #EC7B11;
+$light:#F0F0F0;
+$dark: #030404;
+$white:#ffffff;
 
-$header-bg:#030404;
+$header-bg:$dark;
+
+$footer-bg:$dark;
+$footer-color:$white;
+$footer-copyright-bg:#707070;
 
 // Fonts
 $font-family-base: 'Montserrat';
+$headings-font-weight: 700;
+
+// Links
+$link-hover-decoration: none;
