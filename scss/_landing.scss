@@ -39,24 +39,44 @@
         text-transform: uppercase;
         @include font-size(60);
         font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      &-text {
+        margin-bottom: 30px;
       }
     }
   }
-  .slick-dots {
-    bottom: 80px;
+
+  .slick {
+    &-arrow {
+      &::before {
+        color: $white;
+        @include font-size(30);
+      }
+    }
+
+    &-dots {
+      bottom: 80px;
+    }
   }
 }
 
 #lenders {
   padding-top: 50px;
   padding-bottom: 25px;
+
   .lenders {
     &__title {
       text-align: center;
+      margin-bottom: 30px;
+      @include font-size(38);
+
       span {
         display: inline-block;
         position: relative;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
+
         &::before {
           content: "";
           position: absolute;
@@ -69,10 +89,12 @@
         }
       }
     }
+
     &__slide {
       list-style: none;
       padding-left: 0;
       margin-bottom: 0;
+
       &--bg {
         background-color: $light;
         padding-top: 20px;
@@ -94,12 +116,25 @@
         max-width: 100%;
         margin: 0 auto;
       }
+
       .slick {
         &-prev {
           left: -10px;
         }
+
         &-next {
           right: -10px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .lenders {
+      &__slide {
+        &--bg {
+          padding-top: 30px;
+          padding-bottom: 30px;
         }
       }
     }
@@ -109,10 +144,33 @@
 #reason {
   padding-top: 25px;
   padding-bottom: 50px;
+
   .reason {
+    &__title {
+      @include font-size(38);
+      margin-bottom: 15px;
+
+      span {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 15px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 80px;
+          height: 5px;
+          background-color: $primary;
+        }
+      }
+    }
+
     &__list {
       list-style: none;
       padding-left: 0;
+      margin-bottom: 35px;
       display: flex;
       flex-wrap: wrap;
 
@@ -123,6 +181,7 @@
         @include font-size(20);
         margin-top: 15px;
         margin-bottom: 15px;
+
         &::before {
           @include font-icon("\f054");
           position: absolute;
@@ -139,10 +198,12 @@
       &-item {
         margin: 0 15px;
       }
+
       .slick {
         &-prev {
           left: -10px;
         }
+
         &-next {
           right: -10px;
         }
@@ -172,6 +233,11 @@
 
     &-subtitle {
       font-style: italic;
+      color: $secondary;
+    }
+
+    &-text {
+      color: $secondary;
     }
   }
 
@@ -183,6 +249,7 @@
         }
       }
     }
+
     .card {
       &-subtitle {
         margin-bottom: 10px;
@@ -199,10 +266,31 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $light;
+
   .goal {
+    &__title {
+      @include font-size(38);
+      margin-bottom: 30px;
+
+      span {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 15px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 80px;
+          height: 5px;
+          background-color: $primary;
+        }
+      }
+    }
+
     &__img {
       position: relative;
-      margin-bottom: 50px;
 
       &-main,
       &-shadow {
@@ -223,14 +311,47 @@
       }
     }
   }
+
+  @include media-breakpoint-down(md) {
+    .goal {
+      &__img {
+        margin-bottom: 50px;
+      }
+    }
+  }
 }
 
 #apply {
   .apply {
+    &__title {
+      text-align: center;
+      color: $white;
+      @include font-size(38);
+      margin-bottom: 30px;
+
+      span {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 15px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          width: 80px;
+          height: 5px;
+          background-color: $dark;
+        }
+      }
+    }
+
     &__nav {
       padding-top: 50px;
       padding-bottom: 50px;
       background-color: $primary;
+
       .nav {
         &-item {
           display: flex;
@@ -241,9 +362,11 @@
           flex-grow: 1;
           text-align: center;
         }
+
         &-img {
           margin-bottom: 20px;
         }
+
         &-link {
           background-color: $dark;
           color: $white;
@@ -251,6 +374,7 @@
           font-weight: bold;
           @include font-size(20);
           border: 1px solid $dark;
+
           &.active {
             background-color: $white;
             color: $body-color;
@@ -258,9 +382,12 @@
         }
       }
     }
+
     &__content {
       padding-top: 50px;
       padding-bottom: 50px;
+      background-color: $light;
+
       &__img {
         position: relative;
         margin-bottom: 50px;
@@ -285,36 +412,66 @@
       }
     }
   }
-  @include media-breakpoint-down(md){
-      .apply{
-          &__nav{
-              .nav{
-                  &-item{
-                      &:not(:last-child){
-                          margin-bottom: 30px;
-                      }
-                  }
-              }
+
+  @include media-breakpoint-down(md) {
+    .apply {
+      &__nav {
+        .nav {
+          flex-direction: column;
+
+          &-item {
+            &:not(:last-child) {
+              margin-bottom: 30px;
+            }
           }
+        }
       }
+    }
   }
 }
 
 #mortgage {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  .mortgage {
+    &__title {
+      @include font-size(38);
+      margin-bottom: 30px;
+
+      span {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 15px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 80px;
+          height: 5px;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
   .card {
     background-color: $light;
     border-radius: 10px;
     border-width: 0;
+
     &-img {
       border-radius: 10px;
       margin-bottom: 15px;
     }
+
     &-title,
     &-subtitle {
       @include font-size(13);
     }
+
     &-subtitle {
       font-weight: normal;
       font-style: italic;
