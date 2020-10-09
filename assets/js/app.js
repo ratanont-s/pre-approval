@@ -1,28 +1,30 @@
 $(function () {
-    $('.navbar-nav a').on('click', function(){
-        $('#navbarSupportedContent').collapse('toggle');
+
+    function checkWidth() {
+        var windowSize = $(window).width();
+
+        if (windowSize <= 991) {
+            console.log("screen width is less than 992");
+            $('.navbar-nav a').on('click', function(){
+                $('#navbarSupportedContent').collapse('toggle');
+            })
+        }
+    }
+
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+    
+    var scroll = new SmoothScroll('a[href*="#"]');
+
+    $('.apply__nav a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        e.target // newly activated tab
+        e.relatedTarget // previous active tab
+        console.log(e.target);
+        var href = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(href).offset().top -150
+        }, 'slow');
     })
-
-    // Add smooth scrolling to all links
-    $("a.link-scroll").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-    });
 });
