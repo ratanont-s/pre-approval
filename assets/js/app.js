@@ -1,4 +1,8 @@
 $(function () {
+    $('.navbar-nav a').on('click', function(){
+        $('#navbarSupportedContent').collapse('toggle');
+    })
+
     // Add smooth scrolling to all links
     $("a.link-scroll").on('click', function (event) {
 

@@ -119,22 +119,33 @@
 
       .slick {
         &-prev {
-          left: -10px;
+          left: -15px;
         }
 
         &-next {
-          right: -10px;
+          right: -15px;
         }
       }
     }
   }
 
   @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 50px;
     .lenders {
       &__slide {
         &--bg {
           padding-top: 30px;
           padding-bottom: 30px;
+        }
+        .slick {
+          &-prev {
+            left: -25px;
+          }
+  
+          &-next {
+            right: -25px;
+          }
         }
       }
     }
@@ -201,11 +212,11 @@
 
       .slick {
         &-prev {
-          left: -10px;
+          left: -15px;
         }
 
         &-next {
-          right: -10px;
+          right: -15px;
         }
       }
     }
@@ -238,6 +249,24 @@
 
     &-text {
       color: $secondary;
+    }
+  }
+
+  @include media-breakpoint-up(lg){
+    padding-top: 50px;
+    padding-bottom: 100px;
+    .reason{
+      &__slide{
+        .slick {
+          &-prev {
+            left: -25px;
+          }
+  
+          &-next {
+            right: -25px;
+          }
+        }
+      }
     }
   }
 
@@ -313,6 +342,8 @@
   }
 
   @include media-breakpoint-down(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
     .goal {
       &__img {
         margin-bottom: 50px;
@@ -416,6 +447,8 @@
   @include media-breakpoint-down(md) {
     .apply {
       &__nav {
+        padding-top: 80px;
+        padding-bottom: 80px;
         .nav {
 
           &-item {
@@ -424,6 +457,10 @@
             }
           }
         }
+      }
+      &__content{
+        padding-top: 80px;
+        padding-bottom: 80px;
       }
     }
   }
@@ -475,5 +512,9 @@
       font-weight: normal;
       font-style: italic;
     }
+  }
+  @include media-breakpoint-up(lg){
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
