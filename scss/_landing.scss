@@ -417,7 +417,6 @@
     .apply {
       &__nav {
         .nav {
-          flex-direction: column;
 
           &-item {
             &:not(:last-child) {
